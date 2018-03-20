@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css"	href="prueba-portfolio.css"/>
+			<title>PORTFOLIO</title>
+	</head>
+	<body>
+		<div>
+		<div class="orden">
+		<div id="header">
+			<ul class="nav">
+				<li><a href="index.html">Home</a>
+					<ul>
+						<li><a href="model.html">Model</a></li>
+						<li><a href="rig.html">Rigging</a></li>
+						<li><a href="anim.html">Animation</a></li>
+						<li><a href="otros.html">Other</a></li>
+					</ul>
+					</ul>
+		</div>
+		</div>
+		<div class="titulopagina1">
+		  <h1>Rigging</h1>
+		  </div>
+
+		  <div class="capaSlider">
+		  <video class="mySlides" src="video/cocherig.mp4" width="640" height="480" controls></video>
+		</div>
+		</div>
+<div class="botones">
+  <button class="botonizq" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="botondrch" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+		  </body>
+</html>
