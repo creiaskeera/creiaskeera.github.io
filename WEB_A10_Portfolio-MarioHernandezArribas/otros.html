@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="prueba-portfolio.css"/>
+			<title>PORTFOLIO</title>
+	</head>
+	<body>
+			 <div>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="index.html">Home</a>
+					<ul>
+						<li><a href="model.html">Model</a></li>
+						<li><a href="rig.html">Rigging</a></li>
+						<li><a href="anim.html">Animation</a></li>
+						<li><a href="otros.html">Other</a></li>
+					</ul>
+					</ul>
+		</div>
+		</div>
+		<div class="titulopagina1">
+		  <h1>Otros</h1>
+		  </div>
+		<div class="capaSlider">
+		<img class="mySlides" src="fotos/otros/titulo.jpg" style="width:600px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/concept.jpg" style="width:800px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/cecilio.jpg" style="width:700px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/arena.jpg" style="width:400px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/frutas.jpg" style="width:500px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/stairs.jpg" style="width:300px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/bilbao.jpg" style="width:300px" alt="fotosotros">
+		<img class="mySlides" src="fotos/otros/obrero.jpg" style="width:400px" alt="fotosotros">
+		
+
+		</div>
+<div class="botones">
+  <button class="botonizq" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="botondrch" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<div>
+			<p class="photo-credit">CREIASKEERA 2018: <a href="https://www.u-tad.com/">U-TAD Madrid</a></p>
+		</div>
+		  </body>
+</html>
